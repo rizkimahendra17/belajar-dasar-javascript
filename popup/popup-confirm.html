@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Comfirm</title>
+</head>
+<body>
+    
+    <script>
+        const masuk = confirm("Apakah Anda Islam");
+
+        if(masuk){
+            const name = prompt("Apakah Anda Sholat ? ketik ya/tidak");
+            if(name == "ya"){
+                alert('Anda Berbohong Aziz')
+                const lanjut = prompt("Tolong Jawab Dengan Jujur Aziz ? ketika jujur/tidak");
+                if(lanjut == "jujur"){
+                    alert('anda tidak tersesat');
+                }else{
+                    alert('Anda Pemuda Tersesat, Kuy Mobile Legends');
+                }
+            }else{
+                alert('Nerakaa!!!');
+            }
+
+        }else{
+            alert('Nerakaaaaaa!!!');
+        }
+
+    </script>
+</body>
+</html>
