@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika Di Non Boolean</title>
+</head>
+<body>
+    <script>
+
+        console.info("Hello" || "");
+        console.info("" || []);
+        console.info("0" || "NOL");
+        console.info(0 || "NOL");
+        console.info(null || "NULL");
+        console.info(undefined || "UNDEFIENED");
+        console.info("undefined" || "null");
+
+
+        const person = {
+            firstName: "",
+            lastName: "Mahendra"
+        };
+
+        const name = person.firstName || person.lastName;
+        console.info(name);
+
+
+        console.info("Hello" && ""); // ""
+        console.info("" && []);// ""
+        console.info("0" && "NOL"); // NOL
+        console.info(0 && "NOL"); // 0
+        console.info(null && "NULL"); //null
+        console.info(undefined && "UNDEFIENED"); //undifined
+        console.info("undefined" && "null"); //null
+
+
+    </script>
+</body>
+</html>
