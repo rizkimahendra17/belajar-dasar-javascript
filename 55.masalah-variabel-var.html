@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masalah Variabel </title>
+</head>
+<body>
+    <script>
+        //global scope
+        let i = 20;
+
+        for(let i = 0; i < 10; i++){
+            //local scope
+            console.info(`local : ${i}`);
+        }
+
+        console.info(`Global ${i}`);
+
+
+
+        //kalau pakai var dia dapat di akses di mana aja variabel nya
+        // jadi variabel nya tidak terikat dengan scope dapat di akses dan tidak disarankan menggunkan var
+    </script>
+</body>
+</html>
